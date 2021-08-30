@@ -1,7 +1,7 @@
-# packer-nginx64
+# bionic64-ipv6-disabled
 
 ## Description
-Create a Vagrant nginx ubuntu based box via Packer
+Create a Vagrant ubuntu based box with ipv6 disabled via Packer
 
 ## Pre-requirements
 
@@ -22,19 +22,20 @@ Create a Vagrant nginx ubuntu based box via Packer
 ### Clone the repo
 
 ```
-git clone https://github.com/viv-garot/packer-nginx64
+git clone https://github.com/viv-garot/bionic64-ipv6-disabled
+
 ```
 
 ### Change directory
 
 ```
-cd packer-nginx64
+cd bionic64-ipv6-disabled
 ```
 
 ### Build the box with Packer
 
 ```
-packer build nginx64.json
+packer build bionic64-ipv6-disabled.json
 ```
 
 ### How to use the box with Vagrant
@@ -42,13 +43,13 @@ packer build nginx64.json
 #### Add the box to Vagrant
 
 ```
-vagrant box add --name nginx64 nginx64-vbox.box
+vagrant box add --name bionic64-ipv6-disabled bionic64-ipv6-disabled.box
 ```
 
 #### Initialize the box to create a VagrantFile
 
 ```
-vagrant init -m nginx64
+vagrant init -m bionic64-ipv6-disabled
 ```
 
 #### Start the box
@@ -129,14 +130,14 @@ vagrant cloud box create vivien/nginx64 --no-private
 ```
 vagrant cloud publish --box-version `date +%y.%m.%d` \
   --force --no-private --release <user>/<box>   \
-  `date +%y.%m.%d` virtualbox nginx64-vbox.box
+  `date +%y.%m.%d` virtualbox bionic64-ipv6-disabled.box
 ```
 
 e.g.
 ```
 vagrant cloud publish --box-version `date +%y.%m.%d` \
-  --force --no-private --release vivien/nginx64   \
-  `date +%y.%m.%d` virtualbox nginx64-vbox.box
+  --force --no-private --release vivien/bionic64-ipv6-disabled   \
+  `date +%y.%m.%d` virtualbox bionic64-ipv6-disabled.box
 ```
 
 ## Consume the box from the Vagrant Cloud
@@ -161,7 +162,7 @@ vagrant init -m <user>/<box>
 
 e.g.
 ```
-vagrant init -m vivien/nginx64
+vagrant init -m vivien/bionic64-ipv6-disabled
 ```
 
 ### Start the box
