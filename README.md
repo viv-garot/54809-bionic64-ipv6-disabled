@@ -154,6 +154,29 @@ vagrant ssh -c "ip add"
 Connection to 127.0.0.1 closed.
 ```
 
+### Run the provider download script
+
+```
+bash /vagrant/curl.sh
+ls out/
+```
+
+_sample_
+
+```
+ls out
+curl-v-01-rc0.log  curl-v-05.log      curl-v-10-rc0.log  curl-v-14.log      curl-v-19-rc0.log    curl-v-I-04.log      curl-v-I-09-rc0.log  curl-v-I-13.log      curl-v-I-18-rc0.log
+curl-v-01.log      curl-v-06-rc0.log  curl-v-10.log      curl-v-15-rc0.log  curl-v-19.log        curl-v-I-05-rc0.log  curl-v-I-09.log      curl-v-I-14-rc0.log  curl-v-I-18.log
+curl-v-02-rc0.log  curl-v-06.log      curl-v-11-rc0.log  curl-v-15.log      curl-v-I-01-rc0.log  curl-v-I-05.log      curl-v-I-10-rc0.log  curl-v-I-14.log      curl-v-I-19-rc0.log
+curl-v-02.log      curl-v-07-rc0.log  curl-v-11.log      curl-v-16-rc0.log  curl-v-I-01.log      curl-v-I-06-rc0.log  curl-v-I-10.log      curl-v-I-15-rc0.log  curl-v-I-19.log
+curl-v-03-rc0.log  curl-v-07.log      curl-v-12-rc0.log  curl-v-16.log      curl-v-I-02-rc0.log  curl-v-I-06.log      curl-v-I-11-rc0.log  curl-v-I-15.log
+curl-v-03.log      curl-v-08-rc0.log  curl-v-12.log      curl-v-17-rc0.log  curl-v-I-02.log      curl-v-I-07-rc0.log  curl-v-I-11.log      curl-v-I-16-rc0.log
+curl-v-04-rc0.log  curl-v-08.log      curl-v-13-rc0.log  curl-v-17.log      curl-v-I-03-rc0.log  curl-v-I-07.log      curl-v-I-12-rc0.log  curl-v-I-16.log
+curl-v-04.log      curl-v-09-rc0.log  curl-v-13.log      curl-v-18-rc0.log  curl-v-I-03.log      curl-v-I-08-rc0.log  curl-v-I-12.log      curl-v-I-17-rc0.log
+curl-v-05-rc0.log  curl-v-09.log      curl-v-14-rc0.log  curl-v-18.log      curl-v-I-04-rc0.log  curl-v-I-08.log      curl-v-I-13-rc0.log  curl-v-I-17.log
+```
+
+
 ### Destroy the box
 
 ```
